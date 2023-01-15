@@ -15,19 +15,24 @@
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
   </head>
   <body>
     <header class="header">
       <img src="./img/omnifood-logo.png" alt="Omnifood Logo" class="logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Navigation1</a></li>
-          <li><a href="#" class="main-nav-link">Navigation2</a></li>
-          <li><a href="#" class="main-nav-link">Navigation3</a></li>
-          <li><a href="#" class="main-nav-link">Navigation4</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Navigation5</a></li>
+          <li><a href="#how" class="main-nav-link">How It Works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li><a href="#testimonial" class="main-nav-link">Testimonial</a></li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try For Free</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -41,8 +46,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" class="btn btn--full btn-right-sm">Start Eating Well</a>
-            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+            <a href="#cta" class="btn btn--full btn-right-sm"
+              >Start Eating Well</a
+            >
+            <a href="#how" class="btn btn--outline">Learn More &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
                 <img
@@ -102,7 +109,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="sub-heading">How It Work</span>
           <h2 class="heading-secondary">
@@ -167,7 +174,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="sub-heading">Meals</span>
           <h2 class="heading-secondary">
@@ -286,7 +293,7 @@
           <a href="#" class="link">See All Receipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonial grid grid--2--cols">
+      <section class="section-testimonial grid grid--2--cols" id="testimonial">
         <div class="testimonial-container">
           <span class="sub-heading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -381,7 +388,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -491,7 +498,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -627,5 +634,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- <script src="https://unpkg.com/smoothscrollpolyfill@0.4.4/dist/smoothscroll.min.js"></script> -->
+    <!-- Custom JS File -->
+    <script src="js/script.js"></script>
   </body>
 </html>

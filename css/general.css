@@ -8,12 +8,15 @@
 } */
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #555;
   line-height: 1;
+  overflow-x: hidden;
 }
 /*****************************************/
 /* General Component */
@@ -21,6 +24,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 .grid {
   display: grid;
