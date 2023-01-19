@@ -59,7 +59,7 @@ default : 9px;
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .main-nav-link:link,
@@ -107,12 +107,12 @@ default : 9px;
   border: none;
   background: none;
   cursor: pointer;
+  display: none;
 }
 .icon-mobile-nav {
   width: 4.8rem;
   height: 4.8rem;
   color: #333;
-  display: none;
 }
 .icon-mobile-nav[name="close-outline"] {
   display: none;

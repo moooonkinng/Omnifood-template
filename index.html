@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnifood</title>
+    <meta
+      name="description"
+      content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!"
+    />
+    <title>Omnifood &mdash; Never Cook Again</title>
+    <!-- Favicon Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Google Fonts Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,9 +106,13 @@
             </div>
           </div>
           <div class="hero-img-box">
+            <!-- <picture>
+              <source srcset="hero-img/optimizer-hero.webp" type="image/png" />
+              <source srcset="hero-img/optimizer-hero.png" type="image/png" />
+            </picture> -->
             <img
               class="img-hero"
-              src="./img/hero.png"
+              src="hero-img/optimizer-hero.png"
               alt="Omnifood Banner Image"
             />
           </div>
@@ -508,10 +535,11 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form action="#" class="cta-form">
+              <form name="sign-up" class="cta-form" netlify>
                 <div>
                   <label for="full-name">Your Name</label>
                   <input
+                    name="full-name"
                     type="text"
                     placeholder="John Smith"
                     id="full-name"
@@ -521,6 +549,7 @@
                 <div>
                   <label for="for-email">Your Email</label>
                   <input
+                    name="email"
                     type="email"
                     id="for-email"
                     placeholder="me@example.com"
@@ -529,7 +558,7 @@
                 </div>
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select name="" id="select-where" required>
+                  <select name="select-where" id="select-where" required>
                     <option value="Please Choose One Option">
                       Please Choose One Option
                     </option>
